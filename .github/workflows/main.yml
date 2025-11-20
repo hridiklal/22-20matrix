@@ -32,6 +32,5 @@ jobs:
       - name: Upload JAR Artifacts
         uses: actions/upload-artifact@v4
         with:
-          # Unique name per matrix combination (OS + Java version)
           name: jar-${{ matrix.os }}-java-${{ matrix.java }}
           path: target/*.jar
